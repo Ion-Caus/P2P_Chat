@@ -10,4 +10,5 @@ public interface AddressServerInterface extends Remote {
     Peer findPeer(String alias) throws RemoteException;
 
     String SERVICE_NAME = "P2P_Address";
+    int SERVICE_PORT = 1099;
 }

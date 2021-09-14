@@ -27,7 +27,7 @@ public class P2PAddressServer implements AddressServerInterface {
 
     private void startRegistry() throws RemoteException {
         try {
-            LocateRegistry.createRegistry(1099);
+            LocateRegistry.createRegistry(SERVICE_PORT);
             System.out.println("Registry started...");
         }
         catch (ExportException e) {
